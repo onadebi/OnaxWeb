@@ -1,0 +1,150 @@
+﻿/*QLE Overrides*/
+/*input {max-width: 400px; margin-left:25px;}*/
+
+.onx-nowrap {
+    white-space: nowrap;
+}
+
+.inputMargin {max-width: 400px; margin-left:25px;}
+
+.onx-form-180 { min-width:180px; max-width:250px; min-height:25px; }
+
+.onx-form-200 { min-width:200px; min-height:25px; }
+
+.onx-form-250{min-width:280px; min-height:25px;}
+
+.onx-padding-0 {padding:0px;}
+
+.onx-margin-0 {margin:0px;}
+
+.onaxActionBtn{ border:1px solid brown; background-color:brown; color:#fff; font-weight:bold; padding:8px; text-decoration:none;}
+.onaxActionBtn a:hover{ border:1px solid brown; background-color:brown; color:#fff; font-weight:bold; padding:8px; text-decoration:none;}
+
+div .onaxActionBtn a:hover{ border:1px solid brown; background-color:brown; color:#fff; font-weight:bold; padding:8px; text-decoration:none;}
+
+.onaxBtn { border:1px solid brown; background-color:brown; color:#fff; font-weight:bold; padding:5px; text-decoration:none;}
+button .onaxBtn:hover{ border:1px solid green; background-color:#fff; color:brown; font-weight:bold; padding:6px; text-decoration:none;}
+a .onaxBtn :hover{  text-decoration:none; border:1px solid green; background-color:brown; color:#fff; font-weight:bold; padding:6px;}
+
+.onxThemeBrownText{color:#A52A2A;  text-align:center; font-weight:bold;}
+
+h2 .onxThemeBrownText{color:#A52A2A; text-align:center; font-weight:bold;}
+h3 .onxThemeBrownText{color:#A52A2A; text-align:center; font-weight:bold;       }
+/* JS disabled styles */
+.no-js nav li:hover ul { display:block; }
+ 
+/* base nav styles */
+nav { display:block; margin:0 auto 20px; border:1px solid #222; position:relative; background-color:#6a6a6a; font:16px Tahoma, Sans-serif; }
+nav ul { padding:0; margin:0; }
+nav ul li a {text-decoration:none;}
+nav li { position:relative; float:left; list-style-type:none;}
+nav ul:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+nav li a { display:block; padding:10px 20px; border-left:1px solid #999; border-right:1px solid #222; color:#eee; text-decoration:none; }
+nav li a:focus { outline:none; text-decoration:underline; }
+nav li:first-child a { border-left:none; }
+nav li.last a { border-right:none; }
+nav a span { display:block; float:right; margin-left:5px; }
+nav ul ul { display:none; width:100%; position:absolute; left:0; background:#6a6a6a; }
+nav ul ul li { float:none; }
+nav ul ul a { padding:5px 10px; border-left:none; border-right:none; font-size:14px; text-decoration:none; }
+nav ul ul a:hover { background-color:#555; }
+
+#onxCenteredLogin {
+    position: absolute;
+    min-width: 300px;
+    min-height: 100px;
+    left: 50%;
+    overflow: visible;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -20px;
+    border:1px solid brown;
+    background-color: #ececec;
+    -webkit-border-radius: 3px;
+    padding: 20px;
+}
+
+.mybox {
+    margin: 20px;
+    position: relative;
+    background-color: #f3f3f3;
+}
+
+.titleHeader {
+    background-color: #930A1C;
+    vertical-align: central;
+    border: 1px solid #930A1C;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+
+
+    .myBox .headFont h2 {
+        background: #f3f3f3 url(../images/h1-bg.png) left bottom repeat-x;
+        font-size: 18px;
+        color: #5d5d5d;
+        padding: 9px 15px;
+        line-height: 20px;
+        border: 1px solid #A52A2A;
+        -moz-border-radius-topleft: 3px;
+        -webkit-border-top-left-radius: 3px;
+        border-top-left-radius: 3px;
+        -moz-border-radius-topright: 3px;
+        -webkit-border-top-right-radius: 3px;
+        border-top-right-radius: 3px;
+        margin-bottom: 0;
+        width: 1010px;
+    }
+
+    .myBox .innerDashboard {
+        background: #f7f6f6;
+        padding: 15px;
+        border: 1px solid #A52A2A;
+        border-top: none;
+        -moz-border-radius-bottomright: 3px;
+        -webkit-border-bottom-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        overflow: wrap;
+        margin-bottom: 19px;
+        min-height: 100px;
+        width: 1010px;
+    }
+
+
+
+
+
+.innerDashboard {
+    width: 1010px;
+}
+
+/*Save this file in the css directory as nav.css. The first rule is purely for when JavaScript is disabled, and allows the hidden submenu to be displayed on hover purely with CSS. The rest of the code defines a set of base styles that format the <nav> menu in the way that we want without adding anything too decorative. Note that we’re using the :after pseudo-selector to clear the floated list items; normally this would be added using a class name to that it could be applied to the containers of any floated elements on the page. At this point our page should look like this:**/
+
+/* CSS3 
+.borderradius nav { -moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; }
+.cssgradients nav { background-image:-moz-linear-gradient(0% 22px 90deg, #222, #999); background-image:-webkit-gradient(linear, 0% 0%, 0% 70%, from(#999), to(#222)); }
+.boxshadow.rgba nav { -moz-box-shadow:2px 2px 2px rgba(0,0,0,.75); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.75); box-shadow:2px 2px 2px rgba(0,0,0,.75); }
+.cssgradients nav li:hover { background-image:-moz-linear-gradient(0% 100px 90deg, #999, #222); background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#222), to(#555)); }
+.borderradius nav ul ul { -moz-border-radius-bottomleft:4px; -moz-border-radius-bottomright:4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+.boxshadow.rgba nav ul ul { background-color:rgba(0,0,0,0.8); -moz-box-shadow:2px 2px 2px rgba(0,0,0,.8); -webkit-box-shadow:2px 2px 2px rgba(0,0,0,.8); box-shadow:2px 2px 2px rgba(0,0,0,.8); }
+.rgba nav ul ul li { border-left:1px solid rgba(0,0,0,0.1); border-right:1px solid rgba(0,0,0,0.1); }
+.rgba nav ul ul a:hover { background-color:rgba(85,85,85,.9); }
+.borderradius.rgba nav ul ul li.last { border-left:1px solid rgba(0,0,0,0.1); border-bottom:1px solid rgba(0,0,0,0.1); -moz-border-radius-bottomleft:4px; -moz-border-radius-bottomright:4px; -webkit-border-bottom-left-radius:4px; -webkit-border-bottom-right-radius:4px; border-bottom-left-radius:4px; border-bottom-right-radius:4px; }
+.csstransforms ul a span { -moz-transform:rotate(-180deg);-webkit-transform:rotate(-180deg); }
+
+    */
+
+/*END OF QLE Overrides*/
+
+/*===============BOOTSTRAP JQUERYUI OVERRIDES===================*/
+
+    .ui-widget.ui-widget-content {
+    border: 1px solid #A52A2A;
+}

@@ -1,0 +1,22 @@
+/*
+
+*/
+body{ background:#ececec; }
+
+#footer{ text-align: center; min-height: 150px; background: #000; color:#fff; padding: 5px;}
+
+.onx-min-height400{
+    min-height: 400px;
+}
+
+.onx-container{
+    background:#fff;
+    min-height:300px;
+}
+
+/*BOOTSTRAP OVERRIDE*/
+.navbar-inverse{
+    background-color:orangered; 
+}
+.navbar-inverse .navbar-nav>li>a{color:#fff;}
+.navbar-inverse .navbar-nav>li>a:hover{color:orange;}
