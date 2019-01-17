@@ -90,3 +90,100 @@ namespace AppTest
         }
     }
 }
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+class Program
+{
+    static void Main()
+    {
+        List<int> coins = new List<int>();
+        List<int> amounts = new List<int>() { 1, 5, 10, 25, 50 };
+        //
+        // Compute change for 51 cents.
+        //
+        Change(coins, amounts, 0, 0, 51);
+    }
+
+    static void Change(List<int> coins, List<int> amounts, int highest, int sum, int goal)
+    {
+        //
+        // See if we are done.
+        //
+        if (sum == goal)
+        {
+            Display(coins, amounts);
+            return;
+        }
+        //
+        // See if we have too much.
+        //
+        if (sum > goal)
+        {
+            return;
+        }
+        //
+        // Loop through amounts.
+        //
+        foreach (int value in amounts)
+        {
+            //
+            // Only add higher or equal amounts.
+            //
+            if (value >= highest)
+            {
+                List<int> copy = new List<int>(coins);
+                copy.Add(value);
+                Change(copy, amounts, value, sum + value, goal);
+            }
+        }
+    }
+
+    static void Display(List<int> coins, List<int> amounts)
+    {
+        foreach (int amount in amounts)
+        {
+            int count = coins.Count(value => value == amount);
+            Console.WriteLine("{0}: {1}",
+                amount,
+                count);
+        }
+        Console.WriteLine();
+    }
+}
+
+Output: partial
+
+1: 51
+5: 0
+10: 0
+25: 0
+50: 0
+
+1: 46
+5: 1
+10: 0
+25: 0
+50: 0
+
+1: 41
+5: 2
+10: 0
+25: 0
+50: 0
+
+1: 41
+5: 0
+10: 1
+25: 0
+50: 0
+
+1: 36
+5: 3
+10: 0
+25: 0
+50: 0
